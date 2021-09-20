@@ -17,10 +17,10 @@ let package = Package(
     targets: [
         .target(
             name: "BeyovaJSON iOS",
+            resources: [
+              .copy("Source")
+            ],
             dependencies: []),
-        .target(
-            name: "BeyovaJSON macOS",
-            dependencies: ["BeyovaJSON"]),
     ], 
     exclude: ["Tests"]
 )
